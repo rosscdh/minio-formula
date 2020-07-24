@@ -7,9 +7,17 @@ MINIO_ACCESS_KEY={{ minio_access_key }}
 # Secret key of the server.
 MINIO_SECRET_KEY={{ minio_secret_key }}
 # Enable or disable access to web UI. By default it is set to on
-MINIO_BROWSER={{ minio_browser }}
+{%- if minio_browser %}
+MINIO_BROWSER=on
+{%- else %}
+MINIO_BROWSER=off
+{%- endif %}
 # By default, MinIO writes to disk in synchronous mode for all metadata operations.
-MINIO_DRIVE_SYNC={{ minio_drive_sync }}
+{%- if minio_drive_sync %}
+MINIO_DRIVE_SYNC=on
+{%- else %}
+MINIO_DRIVE_SYNC=off
+{%- endif %}
 # By default, MinIO disables the feature to log HTTP trace.
 # Set log file here to enable it.
 MINIO_HTTP_TRACE={{ minio_http_trace }}
