@@ -69,6 +69,4 @@ minio:
   port: 9000
 ```
 
-> **NOTE:** *browser* and *drive_sync* are there just for reference,
-> as `on` and `off` are boolean keywords in yaml and it renders
-> `True` and `False` instead.
+> **NOTE:** *browser* and *drive_sync* now have effect, as i fixed the bool yaml issue in the source repo
