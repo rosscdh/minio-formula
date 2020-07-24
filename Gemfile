@@ -1,6 +1,5 @@
 source "https://rubygems.org"
 
-gem 'kitchen-salt'
-gem 'kitchen-inspec'
-gem "kitchen-vagrant"
-
+gem "test-kitchen"
+gem "kitchen-docker"
+gem "kitchen-salt"

@@ -1,0 +1,7 @@
+name: wikijs
+os: CentOS
+os_family: RedHat
+version: 0.0.1
+release: 1
+description: docker driven wikijs
+top_level_dir:  wikijs
